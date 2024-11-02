@@ -20,6 +20,4 @@ jobs:
       run: npm install
       
     - name: Run Cypress tests
-      run: npx cypress run --config-file=cypress.config.js --record true --key ${{ secrets.CYPRESS_RECORD_KEY }}
-      env:
-        CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+      run: npx cypress run
